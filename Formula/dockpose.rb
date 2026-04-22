@@ -5,21 +5,21 @@
 class Dockpose < Formula
   desc "A keyboard-driven TUI for managing Docker Compose stacks."
   homepage "https://github.com/cwklurks/dockpose"
-  version "0.1.6"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/cwklurks/dockpose/releases/download/v0.1.6/dockpose_0.1.6_Darwin_x86_64.tar.gz"
-      sha256 "6d08547e22af0be227dd00d1ad908f6a70c4b2ac4743d51de59846975966a7d2"
+      url "https://github.com/cwklurks/dockpose/releases/download/v0.2.0/dockpose_0.2.0_Darwin_x86_64.tar.gz"
+      sha256 "8c61ac8ae5c47f33994199ab698693440d84df00ed23f8942eba70138efae390"
 
       define_method(:install) do
         bin.install "dockpose"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/cwklurks/dockpose/releases/download/v0.1.6/dockpose_0.1.6_Darwin_arm64.tar.gz"
-      sha256 "e64dddb11607dcdbf9781d38f6d65a6d0b764b0e2d59ca1c634f0e99d3fc6a2b"
+      url "https://github.com/cwklurks/dockpose/releases/download/v0.2.0/dockpose_0.2.0_Darwin_arm64.tar.gz"
+      sha256 "f1808984264be967af3f84282eb36eb7e822845764ecdb4402de55f66ee219c0"
 
       define_method(:install) do
         bin.install "dockpose"
@@ -29,15 +29,15 @@ class Dockpose < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cwklurks/dockpose/releases/download/v0.1.6/dockpose_0.1.6_Linux_x86_64.tar.gz"
-      sha256 "96e1fff7cb3ed2fb569038078e733ae5bef8817910ac8161519dcb231126cb25"
+      url "https://github.com/cwklurks/dockpose/releases/download/v0.2.0/dockpose_0.2.0_Linux_x86_64.tar.gz"
+      sha256 "8cd3548e3422f01478759dd5393affc3938ced893b5a7947034d8f62cf5c9f0b"
       define_method(:install) do
         bin.install "dockpose"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cwklurks/dockpose/releases/download/v0.1.6/dockpose_0.1.6_Linux_arm64.tar.gz"
-      sha256 "9f807ffbf7304895bdd01d05de3b32e15bbc7068ea59b27c842da6b7e9f2979b"
+      url "https://github.com/cwklurks/dockpose/releases/download/v0.2.0/dockpose_0.2.0_Linux_arm64.tar.gz"
+      sha256 "51b1692c55541ce840b3d93e348f6a8f7d2453a74880092ba5c3e90098bf5d8e"
       define_method(:install) do
         bin.install "dockpose"
       end
